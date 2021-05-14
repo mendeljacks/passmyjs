@@ -11,8 +11,8 @@
         "https://*.no3rdvendor.ca/*",
         "https://*.amazon.ca/*",
         "https://*.amazon.com/*",
-        "https://*.facebook.com/*",
-        "*://localhost:*/*"
+        "*://localhost:*/*",
+	"https://*.facebook.com/*"
     ],
     "content_scripts": [
         {
@@ -20,8 +20,8 @@
             "https://*.no3rdvendor.ca/*",
             "https://*.amazon.ca/*",
             "https://*.amazon.com/*",
-            "https://*.facebook.com/*",
-            "*://localhost:*/*"
+            "*://localhost:*/*",
+	    "https://*.facebook.com/*"
           ],
           "js": ["./foreground.js"]
         }
