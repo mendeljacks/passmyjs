@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Pass my JS",
+    "version": "0.1",
+    "description": "Facilitates cross site customization and automation for e-commerce users.",
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "permissions": [
+        "tabs",
+        "https://*.no3rdvendor.ca/*",
+        "https://*.amazon.ca/*",
+        "https://*.amazon.com/*",
+        "*://localhost:*/*"
+    ],
+    "content_scripts": [
+        {
+          "matches": [
+            "https://*.no3rdvendor.ca/*",
+            "https://*.amazon.ca/*",
+            "https://*.amazon.com/*",
+            "*://localhost:*/*"
+          ],
+          "js": ["./foreground.js"]
+        }
+      ]
+}
